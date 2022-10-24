@@ -46,10 +46,4 @@ public class Lottery {
             return 0;
         }
     }
-
-    public String toString()
-    {
-        statement = "Enter your lottery pick: " + userValue;
-        statement = "\n "
-    }
 }
