@@ -10,16 +10,24 @@ public class LotteryRunner {
         int lotteryNumber;
 
         // User Input
-        System.out.println("Enter your lottery pick: ");
+        System.out.print("Enter your lottery pick: ");
         userNumber = s.nextInt();
 
+        if (userNumber < 10)
+        {
+            System.out.println(" --> 0" + userNumber);
+        }
+        else
+        {
+            System.out.println();
+        }
         winnings = lottery.determineWinnings(userNumber);
         lotteryNumber = lottery.getLotteryNumber();
 
         System.out.print("The lottery number is " + lotteryNumber);
         if (lotteryNumber < 10)
         {
-            System.out.println(" → 0" + lotteryNumber);
+            System.out.println(" --> 0" + lotteryNumber);
         }
         else
         {
