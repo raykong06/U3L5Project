@@ -46,4 +46,9 @@ public class Lottery {
             return 0;
         }
     }
+
+    public int getLotteryNumber()
+    {
+        return lotteryNumber;
+    }
 }
