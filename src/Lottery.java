@@ -15,6 +15,7 @@ public class Lottery {
         if (lotteryNumber < 10)
         {
             lotteryOne = 0;
+            lotteryTwo = lotteryNumber;
         }
         else
         {
